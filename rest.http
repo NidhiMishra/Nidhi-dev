@@ -1,0 +1,47 @@
+//Login
+POST http://localhost:5000/api/login
+Content-Type: application/json
+
+{
+  "email": "test@gmail.com",
+  "password": "123456"
+}
+
+
+###
+//Register
+POST http://localhost:5000/api/register
+Content-Type: application/json
+
+{
+  "email": "test@gmail.com",
+  "password": "123456",
+  "passwordConfirm": "123456"
+}
+
+
+###
+//getAllCountryDetail
+POST http://localhost:5000/api/getAllCountryDetail
+Content-Type: application/json
+Authorization: Barear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiaWF0IjoxNjIwMzEzMzkwLCJleHAiOjE2MjAzMTM2OTB9.-oMvUqTWR3aou---scrVju1ZxjntWHo4xbXsu4CZ3o4
+
+###
+//getCountry
+POST http://localhost:5000/api/getCountry
+Content-Type: application/json
+Authorization: Barear eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiaWF0IjoxNjIwMzEzMzkwLCJleHAiOjE2MjAzMTM2OTB9.-oMvUqTWR3aou---scrVju1ZxjntWHo4xbXsu4CZ3o4
+
+{
+  "countryName": "Egypt"
+}
+
+
+###
+//refreshToken
+POST http://localhost:5000/api/refreshToken
+Content-Type: application/json
+
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiaWF0IjoxNjIwMzE0ODY2LCJleHAiOjE2MjAzMTUxNjZ9.0y64nbOBZW9qXRMxXSbNkSGvgqP41Icv8szemAO20PA"
+}
